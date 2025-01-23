@@ -6,61 +6,101 @@ Description: Website is about Artificial Intelligence (AI)
 -->
 
 <!DOCTYPE html>
-<html lang="en">
-<!--Basic HTML Structure for AI website-->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Definition of AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
+        /* Center the main heading */
         h1 {
             text-align: center;
-            color: DodgerBlue; 
         }
-
+        /* Style for the image */
         img {
-            width: 50%;
+            width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto; 
+            margin: 0 auto;
         }
-
-        footer {
-            text-align: center;
+        /* Navigation bar styling */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
             background-color: #333;
-            color: white;
-            padding: 10px;
             position: fixed;
             width: 100%;
-            bottom: 0;
+            top: 0;
+            z-index: 1000;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+        }
+        /* Highlight active link */
+        li a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        /* Add top margin to body to avoid overlap with navbar */
+        body {
+            margin-top: 50px;
+        }
+        /* Section styling */
+        .w3-container {
+            padding: 20px;
         }
     </style>
 </head>
-
 <body>
-    <!--Main heading with blue color-->
-    <h1 style="color:DodgerBlue;">Welcome to AI</h1>
-    <!--Image representing AI Advancements-->
-    <img src="ai.jpg" alt="AI Advancements">
 
-    <!--Subheading introducing the definition of AI-->
-    <h2>Definition of AI</h2>
-    <!--Paragraph explaining what AI is-->
-    <p>Artificial intelligence (AI) is a term used to describe computer systems that can perform tasks that typically
-        require human intelligence. AI systems can learn, solve problems, and make decisions. </p>
-    <!--Subheading explaining why we need AI-->
-    <h2>Why we need AI?</h2>
-    <!--Paragraph explaing the benifits of AI-->
-    <p>AI helps improve efficiency, enables automation, and allows us to solve complex problems that were previously
-        unsolvable.</p>
+    <!-- Navigation Bar -->
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#definition">What is AI?</a></li>
+        <li><a href="#benefits">Benefits of AI</a></li>
+    </ul>
 
-	<!--Ways that AI can help us-->
-	<h2>How AI can help us</h2>
-<p>AI is important because it enables systems to perform tasks that would normally require human intelligence at a fast pace. 
-      This includes tasks like problem-solving, decision-making, and learning from data. It can also be useful in
-      healthcare, finance, education, and many other industries.</p>
+    <!-- Home Section -->
+    <div id="home" class="w3-container w3-green">
+        <h1>Welcome to AI</h1>
+    </div>
+
+    <!-- Image representing AI advancements -->
+    <div class="w3-container">
+        <img src="https://incubator.ucf.edu/wp-content/uploads/2023/07/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1-1500x1000.jpg" alt="AI Advancements">
+    </div>
+
+    <!-- Definition Section -->
+    <div id="definition" class="w3-container">
+        <h2>What is AI?</h2>
+        <p>Artificial intelligence (AI) is a term used to describe computer systems that can perform tasks that typically require human intelligence. AI systems can learn, solve problems, and make decisions.</p>
+        <img src="https://cdn.britannica.com/47/246247-050-F1021DE9/AI-text-to-image-photo-robot-with-computer.jpg?w=300" alt="what is AI">
+    </div>
+
+    <!-- Benefits Section -->
+    <div id="benefits" class="w3-container">
+        <h2>Why We Need AI</h2>
+        <p>AI helps improve efficiency, enables automation, and allows us to solve complex problems that were previously unsolvable. AI is important because it enables systems to perform tasks that would normally require human intelligence at a fast pace. This includes tasks like problem-solving, decision-making, and learning from data. It can also be useful in healthcare, finance, education, and many other industries.</p>
+        <!-- Image added under "Why We Need AI" -->
+        <img src="https://www.neilsahota.com/wp-content/uploads/2022/09/What-is-AI-how-does-it-work.jpg" alt="Why We Need AI" style="width: 100%; margin-top: 20px;">
+    </div>
+
+    <!-- Footer section -->
+    <footer class="w3-container w3-green">
+        <p>&copy; 2025 Definition of AI. All rights reserved.</p>
+    </footer>
+
 </body>
-<footer>
-    <p>&copy; 2025 Definition of AI. All rights reserved.</p>
-</footer>
 </html>
