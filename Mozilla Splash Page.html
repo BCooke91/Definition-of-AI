@@ -1,4 +1,4 @@
-<!--
+<!-- 
 Name: Brad Cooke, Samir Alli, Sona Bijumon Prasobha, Carl Cuan, Group 4
 File: Assignment 2
 Date: 30 January 2025
@@ -8,75 +8,96 @@ Description: Mozilla Splash Page
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Meta tags for character set and responsive design -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page that appears in the browser tab -->
     <title>Mozilla Splash Page</title>
     <style>
+        /* Basic styling for the body of the page */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif; /* Set font family */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-color: #f4f4f4; /* Set background color */
         }
+
+        /* Container to center content and add padding */
         .container {
-            width: 80%;
-            margin: auto;
-            background: white;
-            padding: 20px;
+            width: 80%; /* Set container width */
+            margin: auto; /* Center container */
+            background: white; /* Set background color */
+            padding: 20px; /* Add padding */
         }
+
+        /* Header styling for title and logo */
         .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space out title and logo */
+            align-items: center; /* Vertically align items */
+            padding: 20px; /* Add padding */
         }
+
+        /* Styling for the video section */
         .video-section {
-            display: flex;
-            background: #ddd;
-            padding: 20px;
-            align-items: center;
+            display: flex; /* Use flexbox for layout */
+            background: #ddd; /* Set background color */
+            padding: 20px; /* Add padding */
+            align-items: center; /* Vertically align items */
         }
+
+        /* Styling for video iframe to make it responsive */
         .video-section iframe {
-            flex: 1;
-            max-width: 400px;
+            flex: 1; /* Allow iframe to take available space */
+            max-width: 400px; /* Set max width for iframe */
         }
+
+        /* Text section next to the video */
         .video-text {
-            flex: 2;
-            padding-left: 20px;
+            flex: 2; /* Allow text section to take up more space */
+            padding-left: 20px; /* Add padding to the left */
         }
+
+        /* Red section with logos and links */
         .red-section {
-            background: #b22222;
-            padding: 20px;
-            display: flex;
-            justify-content: space-around;
+            background: #b22222; /* Set background color */
+            padding: 20px; /* Add padding */
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-around; /* Space out logos */
         }
+
+        /* Style for images inside the red section */
         .red-section img {
-            width: 120px;
-            height: auto;
+            width: 120px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
         }
+
+        /* Styling for the panda section */
         .panda-section img {
-            width: 100%;
-            height: auto;
+            width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Header section containing the Mozilla title and logo -->
         <div class="header">
             <h1>Mozilla</h1>
             <img width="120" height="auto" src="https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/mdn-splash-page-start/originals/firefox_logo-only_RGB.png?raw=true" alt="Mozilla Logo">
         </div>
 
+        <!-- Video section with embedded YouTube video and description text -->
         <div class="video-section">
             <iframe width="400" height="225" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allowfullscreen></iframe>
             <div class="video-text">
                 <h2>Rocking the free web</h2>
                 <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
-
                 <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
             </div>
         </div>
 
+        <!-- Red section with clickable logos linking to different Mozilla-related pages -->
         <div class="red-section">
             <a href="https://www.mozilla.org/en-US/firefox/" target="_blank">
                 <img src="https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/mdn-splash-page-start/originals/firefox_logo-only_RGB.png?raw=true" alt="Firefox Logo">
@@ -92,6 +113,7 @@ Description: Mozilla Splash Page
             </a>
         </div>
 
+        <!-- Panda section with an image that links to the original source -->
         <div class="panda-section">
             <a href="https://www.flickr.com/photos/mathiasappel/21675551065/" target="_blank">
                 <picture>
