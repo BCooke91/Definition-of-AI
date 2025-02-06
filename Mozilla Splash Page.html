@@ -16,18 +16,22 @@ Description: Mozilla Splash Page
     <style>
         /* Basic styling for the body of the page */
         body {
-            font-family: Arial, sans-serif; /* Set font family */
+            font-family: 'poppins', sans-serif; /* Set font family */
             margin: 0; /* Remove default margin */
             padding: 0; /* Remove default padding */
-            background-color: #b22222; /* Set background color */
+            background-color:linear-gradient(135deg, #FF4500, #b22222); /* Mozilla theme gradient */
+            color: white;
+            text-align: center;
         }
 
         /* Container to center content and add padding */
         .container {
             width: 80%; /* Set container width */
             margin: auto; /* Center container */
-            background: #b22222; /* Set background color */
+            background: white; /* Set background color */
             padding: 20px; /* Add padding */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            color: rgb(188, 71, 71);
         }
 
         /* Header styling for title and logo */
@@ -37,19 +41,28 @@ Description: Mozilla Splash Page
             align-items: center; /* Vertically align items */
             padding: 20px; /* Add padding */
         }
+        .header h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #852806;
+        }
+        
 
         /* Styling for the video section */
         .video-section {
             display: flex; /* Use flexbox for layout */
-            background: #fbf302; /* Set background color */
+            background: #f8f8f8; /* Set background color */
             padding: 20px; /* Add padding */
+            border-radius: 10px;
             align-items: center; /* Vertically align items */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)
         }
 
         /* Styling for video iframe to make it responsive */
         .video-section iframe {
             flex: 1; /* Allow iframe to take available space */
             max-width: 400px; /* Set max width for iframe */
+            border-radius: 10px;
         }
 
         /* Text section next to the video */
@@ -64,18 +77,24 @@ Description: Mozilla Splash Page
             padding: 20px; /* Add padding */
             display: flex; /* Use flexbox for layout */
             justify-content: space-around; /* Space out logos */
+            border-radius: 10px;
+            margin-top: 20px;
         }
 
         /* Style for images inside the red section */
         .red-section img {
             width: 120px; /* Set image width */
             height: auto; /* Maintain aspect ratio */
+    
         }
 
         /* Styling for the panda section */
         .panda-section img {
             width: 100%; /* Make image responsive */
             height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+           
         }
     </style>
 </head>
@@ -83,7 +102,7 @@ Description: Mozilla Splash Page
     <div class="container">
         <!-- Header section containing the Mozilla title and logo -->
         <div class="header">
-            <h1>Mozilla</h1>
+            <h1>MOZILLA</h1>
             <img width="120" height="auto" src="https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/mdn-splash-page-start/originals/firefox_logo-only_RGB.png?raw=true" alt="Mozilla Logo">
         </div>
 
