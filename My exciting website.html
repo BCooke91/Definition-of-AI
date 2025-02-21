@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Exciting Website!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+article {
+    flex: 2; 
+    min-width: 600px; 
+}
+
+article img {
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+aside {
+    flex: 1; 
+    min-width: 300px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1px;
+    justify-content: center;
+}
+
+.photo-grid img {
+    width: 100px; 
+    height: auto;
+    border: none;
+}
+
+.container {
+    max-width: 90%; 
+    margin: auto;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My exciting website!</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our history</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article>
+            <h2>An Exciting Blog Post</h2>
+            <img src="https://github.com/mdn/learning-area/blob/main/css/css-layout/fundamental-layout-comprehension/images/balloon-sq1.jpg?raw=true" alt="Hot Air Balloon">
+            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon
+                azuki bean garlic.</p>
+        
+              <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens
+                dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        
+              <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon
+                napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
+                Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram
+                corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.
+                Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+        
+              <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie
+                turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki
+                bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+        
+              <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle
+                seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+        </article>
+        
+        <aside>
+            <h2>Photography</h2>
+            <div class="photo-grid">
+                <img src="https://github.com/mdn/learning-area/blob/main/css/css-layout/fundamental-layout-comprehension/images/balloon-sq2.jpg?raw=true" alt="Hot Air Balloon">
+                <img src="https://github.com/mdn/learning-area/blob/main/css/css-layout/fundamental-layout-comprehension/images/balloon-sq3.jpg?raw=true" alt="Hot Air Balloon">
+                <img src="https://github.com/mdn/learning-area/blob/main/css/css-layout/fundamental-layout-comprehension/images/balloon-sq4.jpg?raw=true" alt="Hot Air Balloon">
+                <img src="https://github.com/mdn/learning-area/blob/main/css/css-layout/fundamental-layout-comprehension/images/balloon-sq5.jpg?raw=true" alt="Hot Air Balloon">
+                <img src="https://github.com/mdn/learning-area/blob/main/css/css-layout/fundamental-layout-comprehension/images/balloon-sq6.jpg?raw=true" alt="Hot Air Balloon">
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
