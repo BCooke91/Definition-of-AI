@@ -37,13 +37,13 @@ nav ul {
 nav ul li {
     padding: 15px 20px;
 }
-
+/* Navigation link styling */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
 }
-
+/* Main content layout */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -52,49 +52,50 @@ main {
     max-width: 1000px; 
     margin: 0 auto; 
 }
-
+/* Styling for the article section */
 article {
     flex: 2; 
     min-width: 600px; 
 }
-
+/* Image inside article */
 article img {
     width: 150px;
     height: auto;
-    float: left;
+    float: left;/* Aligns image to the left */
     margin-right: 15px;
 }
-
+/* Sidebar (aside) styling */
 aside {
     flex: 1; 
     min-width: 300px;
 }
-
+/* Grid layout for photo section */
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 1px;
     justify-content: center;
 }
-
+/* Photo grid images styling */
 .photo-grid img {
     width: 100px; 
     height: auto;
     border: none;
 }
-
+/* Container for overall page content */
 .container {
     max-width: 90%; 
     margin: auto;
 }
 
     </style>
+     <!-- Website Header -->
 </head>
 <body>
     <header>
         <h1>My exciting website!</h1>
     </header>
-    
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -104,8 +105,9 @@ aside {
             <li><a href="#">Contacts</a></li>
         </ul>
     </nav>
-    
+     <!-- Main content section -->
     <main>
+        <!-- Article section -->
         <article>
             <h2>An Exciting Blog Post</h2>
             <img src="https://github.com/mdn/learning-area/blob/main/css/css-layout/fundamental-layout-comprehension/images/balloon-sq1.jpg?raw=true" alt="Hot Air Balloon">
@@ -128,7 +130,7 @@ aside {
               <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle
                 seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
         </article>
-        
+         <!-- Sidebar section -->
         <aside>
             <h2>Photography</h2>
             <div class="photo-grid">
