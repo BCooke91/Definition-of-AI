@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Cool Box</title>
+    <meta charset="utf-8" /> <!-- Defines character encoding for proper text display -->
+    <meta name="viewport" content="width=device-width" /> <!-- Ensures responsiveness on different screen sizes -->
+    <title>Cool Box</title> <!-- Sets the title of the webpage -->
     <style>
-        
+        /* Centering the body content */
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            display: flex; /* Uses flexbox for alignment */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            height: 100vh; /* Sets body height to full viewport height */
+            margin: 0; /* Removes default margin */
+            background-color: #f0f0f0; /* Sets a light gray background color */
         }
 
-        
+        /* Styling the cool box */
         .cool-box {
-            width: 250px;
-            height: 120px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 250px; 
+            height: 120px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
 
             font-size: 1.125rem; 
-            font-weight: bold;
-            color: white;
-            text-shadow: 2px 2px 3px black;
+            font-weight: bold; 
+            color: white; 
+            text-shadow: 2px 2px 3px black; 
 
-            
-            background-color: red;
+            background-color: red; 
             border-radius: 12px; 
             border: 1px solid #b30000; 
 
+            
             background-image: linear-gradient(
                 to bottom right,
                 rgba(0, 0, 0, 0) 0%, 
@@ -40,6 +40,7 @@
                 rgba(0, 0, 0, 0.2) 100% 
             );
 
+           
             box-shadow: 
                 6px 6px 12px rgba(0, 0, 0, 0.5), 
                 inset 3px 3px 5px rgba(255, 255, 255, 0.5), 
@@ -48,6 +49,7 @@
     </style>
 </head>
 <body>
+    
     <div class="cool-box">This is a cool box</div>
 </body>
 </html>
