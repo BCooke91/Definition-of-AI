@@ -40,15 +40,16 @@
                 rgba(0, 0, 0, 0.2) 100% /* Darker at the bottom-right */
             );
 
+            /* Adds a shadow effect for a 3D look */
             box-shadow: 
-                6px 6px 12px rgba(0, 0, 0, 0.5), 
-                inset 3px 3px 5px rgba(255, 255, 255, 0.5), 
-                inset -3px -3px 5px rgba(0, 0, 0, 0.4); 
+                6px 6px 12px rgba(0, 0, 0, 0.5), /* Outer shadow */
+                inset 3px 3px 5px rgba(255, 255, 255, 0.5), /* Inner light reflection */
+                inset -3px -3px 5px rgba(0, 0, 0, 0.4); /* Inner shadow for depth */
         }
     </style>
 </head>
 <body>
-   
+    <!-- The box containing text -->
     <div class="cool-box">This is a cool box</div>
 </body>
 </html>
