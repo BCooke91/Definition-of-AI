@@ -5,66 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
     <style>
+        /* Basic styles for the body */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
         }
+        
+        /* Styling for the profile card */
         .card {
             border: 1px solid #ccc;
             padding: 20px;
             max-width: 600px;
         }
+        
+        /* Styling for the name */
         .name {
-            color: #ff1493;
+            color: #ff1493; /* Hot pink */
             font-size: 28px;
             font-weight: bold;
         }
+        
+        /* Creates a dotted divider */
         .divider {
             border-top: 10px dotted purple;
             margin: 15px 0;
         }
+        
+        /* Styling for the job title */
         .title {
             color: grey;
             font-weight: bold;
         }
+        
+        /* Styling for the contact information section */
         .contact-info {
             border: 2px solid purple;
             padding: 10px;
             margin-top: 20px;
         }
+        
+        /* Remove underline from links */
         a {
             text-decoration: none;
         }
+        
+        /* Styling for email links */
         .email {
             color: green;
         }
+        
+        /* Styling for website links */
         .web {
             color: orange;
         }
+        
+        /* Styling for contact heading */
         .contact-heading {
             font-style: italic;
             font-weight: bold;
         }
-        /* Hover effect: Turn links green when hovered */
+        
         a:hover {
             color: green;
         }
     </style>
 </head>
 <body>
+   
     <div class="card">
+    
         <div class="name">Bradley Cooke</div>
+        
+       
         <div class="divider"></div>
+       
         <div class="title">Web Developer</div>
+        
         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
         <p>A small river named Duden flows by their place and supplies it with the necessary regeliaria. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 
+       
         <div class="contact-heading">Contact information</div>
 
         <div class="contact-info">
             <ul>
-                <li>Email: <a href="mailto:jane@example.com" class="email">brad@example.com</a></li>
+                <li>Email: <a href="mailto:brad@example.com" class="email">brad@example.com</a></li>
                 <li>Web: <a href="http://example.com" class="web">http://example.com</a></li>
                 <li>Tel: 123 45678</li>
             </ul>
