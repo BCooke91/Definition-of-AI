@@ -1,0 +1,49 @@
+<!-- 
+Name: Bradley Cooke
+File: Assignment 4
+Date: March 28, 2025
+Description: Silly Story
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silly Story Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #storyOutput {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: orange;
+            color: brown;
+            font-size: 18px;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="customName">Enter custom name:</label>
+    <input type="text" id="customName" placeholder="">
+
+    <br><br>
+
+    <input type="radio" id="usUnits" name="unitSystem" checked>
+    <label for="usUnits">US</label>
+    
+    <input type="radio" id="ukUnits" name="unitSystem">
+    <label for="ukUnits">UK</label>
+
+    <br><br>
+
+    <button id="generate">Generate random story</button>
+
+    <div id="storyOutput"></div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
