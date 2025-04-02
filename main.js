@@ -1,3 +1,4 @@
+// Code for Silly Story
 // Story template with placeholders
 const storyText = "It was :temperature: outside, so :insertx: went for a walk. When they saw :inserty:, they were shocked. Then, :insertx: :insertz:. They weighed 300 pounds. It was quite the day!";
 
@@ -47,4 +48,4 @@ function result() {
 }
 
 // Event listener for the button
-document.getElementById("generate").addEventListener("click", result);
+document.getElementById("generate").addEventListener("click", result);;
